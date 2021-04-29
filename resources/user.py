@@ -10,7 +10,6 @@ parser.add_argument('birth')
 parser.add_argument('note')
 
 class User(Resource):
-    
     def db_init(self):
         connection = pymysql.connect(host='localhost', user='root', \
             password='Password1234!', db='API', cursorclass=pymysql.cursors.DictCursor)
@@ -76,7 +75,6 @@ class User(Resource):
         
         
 class Users(Resource):
-    
     def db_init(self):
         connection = pymysql.connect(host='localhost', user='root', \
             password='Password1234!', db='API', cursorclass=pymysql.cursors.DictCursor)

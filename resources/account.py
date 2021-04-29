@@ -9,7 +9,6 @@ parser.add_argument('account_number')
 parser.add_argument('user_id')
 
 class Account(Resource):
-    
     def db_init(self):
         connection = pymysql.connect(host='localhost', user='root', \
             password='Password1234!', db='API', cursorclass=pymysql.cursors.DictCursor)
@@ -75,7 +74,6 @@ class Account(Resource):
         
         
 class Accounts(Resource):
-    
     def db_init(self):
         connection = pymysql.connect(host='localhost', user='root', \
             password='Password1234!', db='API', cursorclass=pymysql.cursors.DictCursor)
